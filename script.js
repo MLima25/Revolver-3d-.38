@@ -18,17 +18,17 @@
 const CALIBRATION_ENABLED = false;
 
 const HOTSPOTS = [
-  { id: "massa-mira",       label: "Massa de mira",       position: "-0.5838 0.5799 0.0011", normal: "0.3235 0.8222 0.4684" },
-  { id: "boca-cano",        label: "Boca do cano",        position: "-0.5713 0.5740 0.0034", normal: "0.3603 0.7054 0.6104" },
-  { id: "cano",             label: "Cano",                position: "-0.2854 0.5668 0.0009", normal: "-0.0011 0.9992 0.0390" },
-  { id: "vareta-extrator",  label: "Vareta do extrator",  position: "-0.3287 0.5037 0.0323", normal: "0.0000 -0.5174 0.8557" },
-  { id: "tambor",           label: "Tambor",               position: "-0.0684 0.5888 0.0313", normal: "-0.0007 0.9695 0.2453" },
-  { id: "guarda-mato",      label: "Guarda-mato",          position: "-0.1447 0.2632 0.0117", normal: "0.9439 0.1989 0.2637" },
-  { id: "gatilho",          label: "Gatilho",              position: "-0.0081 0.2729 0.0116", normal: "0.9832 -0.1822 -0.0044" },
-  { id: "cabo",             label: "Cabo",                 position: "0.2975 0.0897 0.0604", normal: "0.0021 -0.0135 0.9999" },
-  { id: "alca-mira",        label: "Alça de mira",         position: "0.0623 0.5807 0.0315", normal: "0.7687 0.4209 0.4816" },
-  { id: "dedal-serrilhado", label: "Dedal serrilhado",     position: "0.1242 0.4925 0.0312", normal: "0.4084 0.7110 0.5724" },
-  { id: "cao",              label: "Cão",                  position: "0.1535 0.5529 0.0193", normal: "0.4418 0.3639 0.8200" },
+  { id: "massa-mira",       label: "Massa de mira",       position: "0.5502 0.5928 0.0030", normal: "-0.3380 0.7930 0.5060" },
+  { id: "boca-cano",        label: "Boca do cano",        position: "0.5370 0.5856 0.0054", normal: "-0.3940 0.6640 0.6360" },
+  { id: "cano",             label: "Cano",                position: "0.2434 0.5738 0.0265", normal: "0.4620 0.7280 0.5070" },
+  { id: "vareta-extrator",  label: "Vareta do extrator",  position: "0.2943 0.5166 0.0304", normal: "0.0010 -0.6080 0.7940" },
+  { id: "tambor",           label: "Tambor",               position: "0.0360 0.5902 0.0318", normal: "0.0010 0.6850 0.7280" },
+  { id: "guarda-mato",      label: "Guarda-mato",          position: "0.0946 0.2484 0.0173", normal: "-0.4220 0.7100 0.5630" },
+  { id: "gatilho",          label: "Gatilho",              position: "-0.0250 0.2875 0.0143", normal: "-0.1190 -0.5600 0.8200" },
+  { id: "cabo",             label: "Cabo",                 position: "-0.3276 0.0934 0.0563", normal: "0.0980 -0.0620 0.9930" },
+  { id: "alca-mira",        label: "Alça de mira",         position: "-0.0802 0.5773 0.0297", normal: "-0.5710 0.5140 0.6390" },
+  { id: "dedal-serrilhado", label: "Dedal serrilhado",     position: "-0.1563 0.5281 0.0125", normal: "-0.3110 -0.6660 0.6780" },
+  { id: "cao",              label: "Cão",                  position: "-0.1894 0.5567 0.0191", normal: "-0.4050 0.5450 0.7350" },
 ];
 
 /* ============================================================= */
