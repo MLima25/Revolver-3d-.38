@@ -15,20 +15,20 @@
        CALIBRATION_ENABLED = false.
    ============================================================= */
 
-const CALIBRATION_ENABLED = true;
+const CALIBRATION_ENABLED = false;
 
 const HOTSPOTS = [
-  { id: "massa-mira",       label: "Massa de mira",       position: "0.5502 0.5928 0.0030", normal: "-0.3380 0.7930 0.5060" },
-  { id: "boca-cano",        label: "Boca do cano",        position: "0.5370 0.5856 0.0054", normal: "-0.3940 0.6640 0.6360" },
-  { id: "cano",             label: "Cano",                position: "0.4117 0.5342 0.0377", normal: "0.0000 -0.0160 1.0000" },
-  { id: "vareta-extrator",  label: "Vareta do extrator",  position: "0.2888 0.4738 0.0065", normal: "0.0000 -0.8580 0.5130" },
-  { id: "tambor",           label: "Tambor",               position: "-0.0248 0.5692 0.0329", normal: "0.0730 -0.0900 0.9930" },
-  { id: "guarda-mato",      label: "Guarda-mato",          position: "0.0946 0.2484 0.0173", normal: "-0.4220 0.7100 0.5630" },
-  { id: "gatilho",          label: "Gatilho",              position: "-0.0250 0.2875 0.0143", normal: "-0.1190 -0.5600 0.8200" },
-  { id: "cabo",             label: "Cabo",                 position: "-0.3276 0.0934 0.0563", normal: "0.0980 -0.0620 0.9930" },
-  { id: "alca-mira",        label: "Alça de mira",         position: "-0.0802 0.5773 0.0297", normal: "-0.5710 0.5140 0.6390" },
-  { id: "dedal-serrilhado", label: "Dedal serrilhado",     position: "-0.1705 0.5392 0.0217", normal: "-0.1950 -0.8100 0.5530" },
-  { id: "cao",              label: "Cão",                  position: "-0.1894 0.5567 0.0191", normal: "-0.4050 0.5450 0.7350" },
+  { id: "massa-mira", label: "Massa de mira", position: "0.5612 0.5761 -0.0209", normal: "-0.0039 0.8416 -0.5402" },
+  { id: "boca-cano", label: "Boca do cano", position: "0.5974 0.5231 -0.0351", normal: "0.0022 -0.5127 -0.8585" },
+  { id: "cano", label: "Cano", position: "0.4073 0.5402 -0.0373", normal: "-0.0015 0.1453 -0.9894" },
+  { id: "vareta-extrator", label: "Vareta do extrator", position: "0.3019 0.4749 -0.0086", normal: "0.0031 -0.6980 -0.7161" },
+  { id: "tambor", label: "Tambor", position: "0.0130 0.4404 -0.0718", normal: "-0.9595 0.1569 -0.2341" },
+  { id: "guarda-mato", label: "Guarda-mato", position: "-0.0439 0.2212 -0.0206", normal: "0.4833 0.7359 -0.4743" },
+  { id: "gatilho", label: "Gatilho", position: "-0.0000 0.3017 -0.0162", normal: "-0.0117 -0.0033 -0.9999" },
+  { id: "cabo", label: "Cabo", position: "-0.3482 0.1370 -0.0577", normal: "-0.0741 -0.0496 -0.9960" },
+  { id: "alca-mira", label: "Alça de mira", position: "-0.0938 0.5627 -0.0110", normal: "0.0064 0.0087 -0.9999" },
+  { id: "dedal-serrilhado", label: "Dedal serrilhado", position: "-0.1581 0.4125 -0.0401", normal: "-0.0998 -0.1144 -0.9884" },
+  { id: "cao", label: "Cão", position: "-0.1993 0.5610 -0.0035", normal: "-0.5296 0.8391 -0.1239" },
 ];
 
 /* ============================================================= */
@@ -43,7 +43,6 @@ const HOTSPOTS = [
 
   const tooltip = document.getElementById("tooltip");
   const tooltipText = document.getElementById("tooltip-text");
-  const tooltipClose = document.getElementById("tooltip-close");
 
   const btnReset = document.getElementById("btn-reset");
   const btnZoomIn = document.getElementById("btn-zoom-in");
@@ -145,11 +144,6 @@ const HOTSPOTS = [
     tooltip.hidden = false;
     highlightHotspot(id);
   }
-
-  tooltipClose.addEventListener("click", () => {
-    tooltip.hidden = true;
-    highlightHotspot(null);
-  });
 
   /* -----------------------------------------------------------
      Câmera: reset e zoom controlado
