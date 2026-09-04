@@ -15,7 +15,7 @@
        CALIBRATION_ENABLED = false.
    ============================================================= */
 
-const CALIBRATION_ENABLED = false;
+const CALIBRATION_ENABLED = true;
 
 const HOTSPOTS = [
   { id: "massa-mira",       label: "Massa de mira",       position: "0.5502 0.5928 0.0030", normal: "-0.3380 0.7930 0.5060" },
